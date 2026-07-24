@@ -38,13 +38,15 @@ docs/
 
 ## Roadmap macro
 
-1. Sprint 0 — Governança e planejamento
-2. Sprint 1 — Coleta e pesquisa no PNCP
-3. Sprint 2 — Filtros, detalhes e oportunidades salvas
-4. Sprint 3 — Perfil empresarial e compatibilidade objetiva
+1. Sprint 0 — Governança, planejamento e linha de base de segurança
+2. Sprint 1 — Coleta e pesquisa pública no PNCP, sem persistência de dados privados
+3. Sprint 2 — Controle de acesso, filtros, detalhes e oportunidades salvas, somente após o gate de persistência privada
+4. Sprint 3 — Perfil empresarial e compatibilidade objetiva, com isolamento e retenção aprovados
 5. Sprint 4 — Alertas e acompanhamento
-6. Sprint 5 — Segurança, auditoria e validação
-7. Futuro — Leitura e análise de editais com IA
+6. Sprint 5 — Endurecimento, auditoria e validação final dos controles existentes
+7. Futuro — Leitura e análise de editais com IA, mediante decisão específica
+
+A Sprint 5 não inaugura segurança. Autenticação, autorização, isolamento, classificação de dados, retenção e exclusão, proteção de segredos e testes de acesso devem existir antes de qualquer funcionalidade privada.
 
 ## Histórico importante
 
