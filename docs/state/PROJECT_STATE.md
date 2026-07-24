@@ -82,13 +82,14 @@ Sincronizar `PROJECT_STATE.md` com o estado real após o PASS da LEA-188, a apro
 
 ## Gate atual
 
-1. revisar a alteração isolada de `PROJECT_STATE.md` na branch `docs/sync-project-state-post-merge`;
-2. obter autorização separada para abrir um PR documental curto;
-3. executar a revisão aplicável sobre o HEAD candidato;
-4. obter aprovação humana;
-5. mesclar somente após autorização explícita;
-6. confirmar a sincronização final entre GitHub e Linear;
-7. prosseguir com LEA-174 e LEA-175 sem iniciar implementação.
+1. executar novo reteste independente do PR #2 sobre o HEAD exato da branch `docs/sync-project-state-post-merge`;
+2. obter resultado válido de PASS ou PASS COM RESSALVAS sem achados Critical ou High abertos;
+3. somente após o resultado válido, obter aprovação humana;
+4. promover o PR #2 de Draft para Ready for Review após autorização explícita;
+5. reconfirmar o HEAD do PR #2 imediatamente antes de qualquer merge;
+6. executar o merge somente em fluxo separado, com autorização explícita e sem mudança do HEAD aprovado;
+7. confirmar a sincronização final entre GitHub e Linear;
+8. prosseguir com LEA-174 e LEA-175 sem iniciar implementação.
 
 ## Próximo item após este gate
 
