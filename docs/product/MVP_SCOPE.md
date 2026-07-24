@@ -6,6 +6,18 @@ O MVP não utilizará inteligência artificial.
 
 Todas as pesquisas, classificações e alertas serão baseados em dados oficiais, filtros explícitos e regras determinísticas revisáveis.
 
+## Regra de segurança
+
+A pesquisa pública no PNCP pode ser desenvolvida antes da persistência privada. Entretanto, favoritos, notas, perfil empresarial, documentos e histórico de usuário somente poderão ser persistidos depois da implementação e validação de:
+
+- autenticação;
+- autorização;
+- isolamento de dados;
+- classificação de informações empresariais;
+- retenção e exclusão;
+- proteção de segredos;
+- logs mínimos de auditoria.
+
 ## Funcionalidades incluídas
 
 ### 1. Consulta oficial ao PNCP
@@ -47,21 +59,34 @@ Todas as pesquisas, classificações e alertas serão baseados em dados oficiais
 - identificadores;
 - campos ausentes destacados.
 
-### 5. Oportunidades salvas
+### 5. Controle de acesso e isolamento
+
+Antes de funcionalidades privadas:
+
+- autenticação;
+- sessão segura;
+- autorização;
+- isolamento por usuário ou organização;
+- tratamento de segredos;
+- testes de acesso e negação;
+- logs mínimos.
+
+### 6. Oportunidades salvas
 
 - salvar e remover favorito;
 - estados: salva, em triagem, descartada e em preparação;
 - notas internas;
-- histórico mínimo de atualização.
+- histórico mínimo de atualização;
+- acesso restrito ao proprietário ou organização autorizada.
 
-### 6. Acompanhamento de prazos
+### 7. Acompanhamento de prazos
 
 - dias restantes;
 - ordenação por urgência;
 - alertas internos configuráveis;
 - indicação de prazo ausente ou encerrado.
 
-### 7. Perfil empresarial
+### 8. Perfil empresarial
 
 - identificação da empresa;
 - porte;
@@ -70,11 +95,12 @@ Todas as pesquisas, classificações e alertas serão baseados em dados oficiais
 - capacidades declaradas;
 - limite operacional definido pelo usuário;
 - documentos e respectivas validades;
-- experiências e atestados cadastrados manualmente.
+- experiências e atestados cadastrados manualmente;
+- classificação de sensibilidade dos dados.
 
 Nenhum dado empresarial será presumido.
 
-### 8. Compatibilidade objetiva
+### 9. Compatibilidade objetiva
 
 O sistema poderá aplicar regras explícitas sobre dados disponíveis, como:
 
@@ -85,7 +111,7 @@ O sistema poderá aplicar regras explícitas sobre dados disponíveis, como:
 - documento cadastrado e válido;
 - exigência conhecida versus dado empresarial disponível.
 
-### 9. Bloqueadores e informações ausentes
+### 10. Bloqueadores e informações ausentes
 
 Cada análise deve separar:
 
@@ -95,7 +121,7 @@ Cada análise deve separar:
 - itens que exigem leitura do edital;
 - itens que exigem especialista humano.
 
-### 10. Proveniência
+### 11. Proveniência
 
 Toda oportunidade deve mostrar:
 
@@ -139,5 +165,6 @@ O MVP somente será considerado concluído quando:
 - fonte e coleta forem auditáveis;
 - regras de classificação estiverem documentadas;
 - falhas não forem apresentadas como ausência de oportunidades;
+- controle de acesso e isolamento tiverem evidências;
 - revisão independente emitir PASS;
 - validação interna da Predix registrar utilidade real.
