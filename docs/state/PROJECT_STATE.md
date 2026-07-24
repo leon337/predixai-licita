@@ -2,14 +2,14 @@
 
 **Data-base:** 24/07/2026  
 **Fase:** Sprint 0 — Governança e planejamento  
-**Status geral:** remediação dos achados da LEA-184 concluída; aguardando novo reteste independente  
+**Status geral:** LEA-186 concluída com FAIL; achados HIGH remediados na LEA-187; aguardando novo reteste independente na LEA-188  
 **Implementação:** não autorizada  
 **Versão documental vigente na main:** inicialização mínima do repositório  
 **Versão candidata:** PR #1 — governança e escopo da Sprint 0, branch `docs/sprint-0-governanca`
 
 ## Objetivo da etapa atual
 
-Submeter a versão candidata remediada do PR #1 a um novo reteste independente na LEA-186 antes de qualquer aprovação humana ou merge.
+Submeter a versão candidata remediada na LEA-187 a um novo reteste independente na LEA-188 antes de qualquer aprovação humana ou merge.
 
 ## Concluído nesta etapa
 
@@ -29,13 +29,17 @@ Submeter a versão candidata remediada do PR #1 a um novo reteste independente n
 - decisões iniciais registradas como candidatas;
 - revisão crítica preliminar executada com resultado FAIL;
 - remediação dos oito achados preliminares executada;
-- LEA-184 executada como reteste independente, com resultado FAIL;
-- três achados do reteste registrados: GOV-RI-001 e GOV-RI-002 como HIGH; GOV-RI-003 como MEDIUM;
-- LEA-185 criada para remediação separada dos três achados;
-- `PROJECT_STATE.md` atualizado para representar LEA-184, LEA-185 e LEA-186;
-- descrição do projeto Linear sincronizada com segurança antes da persistência privada;
-- contratos individuais das sete skills completados;
-- LEA-186 criada para novo reteste por agente/chat que não participou da remediação.
+- LEA-184 executada como primeiro reteste independente, com resultado FAIL;
+- LEA-185 concluída como remediação separada de GOV-RI-001, GOV-RI-002 e GOV-RI-003;
+- LEA-186 executada como segundo reteste independente, com resultado FAIL;
+- GOV-RI-002 e GOV-RI-003 confirmados como fechados na LEA-186;
+- GOV-RI-001 reaberto como HIGH por referências residuais ao gate anterior;
+- GOV-RI-004 registrado como HIGH por divergência entre o README oficial e o roadmap de segurança;
+- LEA-187 criada para remediação separada de GOV-RI-001 e GOV-RI-004;
+- referências residuais à LEA-185 removidas do estado e do gate atual;
+- `README.md` sincronizado com segurança desde a Sprint 0, controle de acesso antes da persistência privada e Sprint 5 como endurecimento;
+- descrição do projeto Linear sincronizada com o resultado da LEA-186 e o novo gate;
+- LEA-188 criada para novo reteste independente por agente/chat que não participou da LEA-186 nem da LEA-187.
 
 ## Backlog ativo da Sprint 0
 
@@ -51,12 +55,14 @@ Submeter a versão candidata remediada do PR #1 a um novo reteste independente n
 - LEA-182 — estratégia de testes — backlog;
 - LEA-183 — consolidação do planejamento e gate de implementação — bloqueada pelas demais entregas da Sprint 0;
 - LEA-184 — primeiro reteste independente do PR #1 — concluída com FAIL;
-- LEA-185 — remediação dos achados GOV-RI-001 a GOV-RI-003 — concluída;
-- LEA-186 — novo reteste independente do PR #1 — próxima atividade de gate.
+- LEA-185 — primeira remediação dos achados de reteste — concluída;
+- LEA-186 — segundo reteste independente do PR #1 — concluída com FAIL;
+- LEA-187 — remediação de GOV-RI-001 e GOV-RI-004 — concluída;
+- LEA-188 — novo reteste independente do PR #1 — próxima atividade de gate.
 
 ## Em elaboração
 
-- novo reteste independente da versão remediada do PR #1;
+- novo reteste independente da versão remediada do PR #1 na LEA-188;
 - configuração manual dos GPTs e skills após o merge da governança;
 - usuários e jornadas;
 - requisitos funcionais;
@@ -80,13 +86,13 @@ Submeter a versão candidata remediada do PR #1 a um novo reteste independente n
 - regras técnicas e limites reais da API do PNCP ainda precisam ser estudados na LEA-181;
 - o perfil empresarial oficial da Predix ainda precisa ser documentado e auditado;
 - as skills de PNCP e arquitetura permanecem bloqueadas por dependências;
-- o agente/chat que executou a LEA-185 não pode emitir o resultado independente da LEA-186.
+- o agente/chat que executou a LEA-186 e a remediação da LEA-187 não pode emitir o resultado independente da LEA-188.
 
 ## Gate atual
 
-1. confirmar a conclusão e as evidências da LEA-185;
+1. confirmar a conclusão e as evidências da LEA-187;
 2. confirmar o novo HEAD do PR #1;
-3. executar a LEA-186 em outro agente/chat independente;
+3. executar a LEA-188 em outro agente/chat independente;
 4. obter PASS ou PASS COM RESSALVAS sem achados Critical ou High abertos;
 5. obter aprovação humana;
 6. mesclar o PR #1 na `main` somente após autorização explícita;
@@ -104,5 +110,7 @@ Configurar os agentes e skills liberados pela LEA-174 e iniciar a LEA-175 — us
 - tarefa-mãe: LEA-165;
 - governança: LEA-173;
 - primeiro reteste independente: LEA-184 — concluído com FAIL;
-- remediação atual: LEA-185;
-- próximo reteste independente: LEA-186.
+- primeira remediação: LEA-185 — concluída;
+- segundo reteste independente: LEA-186 — concluído com FAIL;
+- remediação dos achados HIGH: LEA-187 — concluída;
+- próximo reteste independente: LEA-188.
